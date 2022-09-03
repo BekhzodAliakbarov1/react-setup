@@ -6,9 +6,7 @@ export interface Tokens {
 }
 
 export interface AuthCredentials extends Tokens {
-  userName: string | null;
   userId: string;
-  userType: 1 | 3 | 4 | null;
 }
 
 export interface AuthContextInterface extends AuthCredentials {
@@ -29,9 +27,7 @@ export type Login = {
 export type SetAuthCredentials = {
   type: 'SET_AUTH_CREDENTIALS';
   payload: {
-    userName: string;
     userId: string;
-    userType: 1 | 3 | 4;
   };
 };
 

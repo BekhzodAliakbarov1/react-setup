@@ -19,8 +19,6 @@ export const logout = (): Logout => {
   removeStorage('accessToken');
   removeStorage('refreshToken');
   removeStorage('userId');
-  removeStorage('fcm_token');
-  removeStorage('userType');
   return {
     type: 'LOGOUT',
   };

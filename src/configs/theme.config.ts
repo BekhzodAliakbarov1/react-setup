@@ -2,71 +2,30 @@ import { CurrentTheme, CustomTheme } from 'types/theme.types';
 import { createTheme } from '@mui/material/styles';
 import { colors, sizes } from '../styles/variables';
 
-const {
-  bg_dark,
-  bg_light,
-  dark_gray_dark,
-  dark_gray_light,
-  disabled,
-  gray_dark,
-  gray_ligth,
-  primary,
-  primary_variant,
-  secondary,
-  stroke_dark,
-  stroke_light,
-  tertiary,
-  text_dark,
-  text_light,
-  white,
-} = colors;
+const { black, primary, white } = colors;
 
 const darkTheme: CustomTheme = {
   bg: {
-    main: bg_dark,
+    main: white,
   },
   text: {
-    main: text_dark,
-  },
-  gray: {
-    main: gray_dark,
-    dark: dark_gray_dark,
-  },
-  stroke: {
-    main: stroke_dark,
+    main: white,
   },
   colors: {
-    disabled,
     primary,
-    primary_variant,
-    secondary,
-    white,
-    tertiary,
   },
   sizes: sizes.breakpoints,
 };
 
 const lightTheme: CustomTheme = {
   bg: {
-    main: bg_light,
+    main: black,
   },
   text: {
-    main: text_light,
-  },
-  gray: {
-    main: gray_ligth,
-    dark: dark_gray_light,
-  },
-  stroke: {
-    main: stroke_light,
+    main: black,
   },
   colors: {
-    disabled,
     primary,
-    primary_variant,
-    secondary,
-    tertiary,
-    white,
   },
   sizes: sizes.breakpoints,
 };
